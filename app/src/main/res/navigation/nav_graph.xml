@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.foodapp.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_HomeFragment_to_ProductOneFragment"
+            app:destination="@id/ProductOneFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ProductTwoFragment"
+            app:destination="@id/ProductTwoFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ProductThreeFragment"
+            app:destination="@id/ProductThreeFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ProductFourFragment"
+            app:destination="@id/ProductFourFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UserProfileFragment"
+        android:name="com.example.foodapp.Fragment.UserProfileFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/CustomerSupportFragment"
+        android:name="com.example.foodapp.Fragment.CustomerSupportFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_customer_support" />
+
+    <fragment
+        android:id="@+id/FavouritesFragment"
+        android:name="com.example.foodapp.Fragment.FavouritesFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/ProductOneFragment"
+        android:name="com.example.foodapp.Fragment.ProductOneFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_product_one" >
+        <action
+            android:id="@+id/action_ProductOneFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductTwoFragment"
+        android:name="com.example.foodapp.Fragment.ProductTwoFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_product_two" >
+        <action
+            android:id="@+id/action_ProductTwoFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductThreeFragment"
+        android:name="com.example.foodapp.Fragment.ProductThreeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_product_three" >
+        <action
+            android:id="@+id/action_ProductThreeFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductFourFragment"
+        android:name="com.example.foodapp.Fragment.ProductFourFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_product_four" >
+        <action
+            android:id="@+id/action_ProductFourFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PaymentFragment"
+        android:name="com.example.foodapp.Fragment.PaymentFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_PaymentFragment_to_PopUpMessageFragment"
+            app:destination="@id/PopUpMessageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PopUpMessageFragment"
+        android:name="com.example.foodapp.Fragment.PopUpMessageFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_pop_up_message" />
+</navigation>

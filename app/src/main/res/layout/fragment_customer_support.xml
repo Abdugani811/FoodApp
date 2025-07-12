@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.CustomerSupportFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/outline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="19dp"
+        android:src="@drawable/liner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/background_chats" />
+
+        <ImageView
+            android:id="@+id/iconImage"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fi_br_user" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/background_chats1"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Hi, how can I help you?"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/photo_group_chats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="259dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/background_chats2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="213dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Hello, I ordered two fried chicken burgers. can I know how much time it will get to arrive?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14">
+
+        <ImageView
+            android:id="@+id/backgroundImage3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/background_chats" />
+
+        <ImageView
+            android:id="@+id/iconImage6"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fi_br_user" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/background_chats1"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Ok, please let me check!"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView46"
+        app:layout_constraintTop_toTopOf="@+id/imageView46" />
+
+    <ImageView
+        android:id="@+id/imageView66"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/photo_group_chats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/background_chats2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView66"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sure..."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView50"
+        app:layout_constraintTop_toTopOf="@+id/imageView50" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView50">
+
+        <ImageView
+            android:id="@+id/backgroundImage6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/background_chats" />
+
+        <ImageView
+            android:id="@+id/iconImage7"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fi_br_user" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="255dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/background_chats1"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView50" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="It’ll get 25 minutes to arrive to your address"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView69"
+        app:layout_constraintTop_toTopOf="@+id/imageView69" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/photo_group_chats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/roboto_semibold"
+        android:text="26 minutes ago"
+        android:textColor="#DBDADA"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView69" />
+
+    <ImageView
+        android:id="@+id/imageView52"
+        android:layout_width="264dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/background_chats2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:layout_width="218dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Ok, thanks you for your support"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView52"
+        app:layout_constraintTop_toTopOf="@+id/imageView52" />
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView52">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="40dp"
+            android:background="@android:color/transparent"
+            android:hint="Type here..."
+            android:paddingStart="12dp"
+            android:fontFamily="@font/roboto_semibold"
+            android:paddingEnd="12dp"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/buttonSend"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_send_button"
+            android:contentDescription="Send"
+            android:src="@drawable/paper_plane" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
